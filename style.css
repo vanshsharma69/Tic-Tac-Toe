@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/assets/squiggles_and_doodles_background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    place-items: center;
+
+}
+
+.game-info{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(50, 7, 96);
+    background-color: rgb(163, 247, 85);
+    padding: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    top: 3rem;
+}
+.tic-tac-toe{
+    width: 90%;
+    max-width: 16rem;
+    background-color: rgb(163, 247, 85);
+    border-radius: 1rem;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1, .box2, .box4, .box5 {
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+}
+
+.box3, .box6 {
+    border-bottom: 4px solid white;
+}
+
+.box7, .box8 {
+    border-right: 4px solid white;
+}
+.btn{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(157, 225, 234);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    /* display: none; */
+}
+.btn:active{
+    display: flex;
+}
+.win{
+    background-color: red;
+}
